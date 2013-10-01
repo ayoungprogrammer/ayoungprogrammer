@@ -113,7 +113,7 @@ tabs {
   width: 100%;
   position: fixed;
 }
-header {
+.header {
   top: 0;
   font-family: 'Quicksand';
   padding: 5px 30px;
@@ -212,7 +212,10 @@ header {
 p {
   line-height: 1.8;
 }
-footer {
+.fade-in {
+  display: none;
+}
+.footer {
   width: 100%;
   margin: 0px 0px;
   border-top: 1px dotted #ccc;

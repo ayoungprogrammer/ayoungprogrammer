@@ -20,7 +20,7 @@ var app = express();
 
 var cur_port;
 
-console.log('Currnet env: '+app.get('env'))
+console.log('Currnet env: '+app.get('env'));
 switch (app.get('env')){
 case 'production': 
 	cur_port = 80; 

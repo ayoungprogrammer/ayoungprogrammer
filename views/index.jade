@@ -1,13 +1,13 @@
 extend layout
 
 block content
-  h1 Home of Michael Young
+  h1<style="display:none"> Home of Michael Young</style>
   p
   p.
      <a href="http://blog.ayoungprogrammer.com"> My technical blog </a>
   p.
      Contact info: michaelyoung1995@gmail.com
-    
+     
 block sidebar
   .widget
     h1 Stats
@@ -15,4 +15,3 @@ block sidebar
       #{serv.curUsers.length} users online
     p.
       #{serv.totalUsers.length} total users
-      

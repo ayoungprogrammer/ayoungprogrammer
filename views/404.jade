@@ -3,18 +3,26 @@ html
   head
     title a young programmer
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src="/javascripts/jquery-1.8.2.js")
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+    script(type='text/javascript', src='js/bounceThis.js')
     script.
-       $(document).ready(function(){
-         //$("#rollButton").click(function() {
-          alert("sas");asdas
-         //});
+       $(function() {
+         $('.header').bounceThis({
+            bounceHeight  : '20px',
+            dropDownSpeed : 300,
+            delay         : 400
+          });
+          $('.fade-in').fadeIn(2000,'swing');
        });
+    
   body
-    header
-      h1 a young programmer
-    .container
-      h1 <center>Page not found!</center>
-      h2 <center>I could not find your page  :(</center>
-    footer
-      p Running on node with Express, Jade and Stylus
+    .fade-in
+      .header
+        h1 <a href="/" STYLE="TEXT-DECORATION: NONE; color : #fff" > a young programmer </a>
+    .fade-in
+        .container
+              h1 <center>Page not found!</center>
+              h2 <center>I could not find your page  :(</center>
+    .fade-in
+        .footer
+            p Running on node with Express, Jade and Stylus
