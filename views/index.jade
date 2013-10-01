@@ -1,10 +1,18 @@
 extend layout
+
 block content
+  h1 Home of Michael Young
+  p
   p.
-     Home of a young programmer
-    a(href ='http://blog.ayoungprogrammer.com') My blog
+     <a href="http://blog.ayoungprogrammer.com"> My technical blog </a>
+  p.
+     Contact info: michaelyoung1995@gmail.com
+    
 block sidebar
   .widget
-    h1 Users online
-    p
-      | #{serv.online.length} users
+    h1 Stats
+    p.
+      #{serv.curUsers.length} users online
+    p.
+      #{serv.totalUsers.length} total users
+      

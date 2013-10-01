@@ -6,5 +6,9 @@
 exports.index = function(req, res){
 
   res.render('index', {serv:req});
-  res.send(req.online.length + ' users online');
+};
+
+exports.notFound = function(req, res){
+
+  res.render('404', {serv:req});
 };
