@@ -20,7 +20,7 @@ var app = express();
 
 var cur_port;
 
-console.log('Currnet env: '+app.get('env'));
+console.log('Current env: '+app.get('env'));
 switch (app.get('env')){
 case 'production': 
 	cur_port = 80; 
@@ -89,7 +89,6 @@ app.use(stylus.middleware(
 		
 app.use(express.static(path.join(__dirname, 'public')));
 	
-
 
 app.get('/', routes.index);
 app.get('/users', user.list);
