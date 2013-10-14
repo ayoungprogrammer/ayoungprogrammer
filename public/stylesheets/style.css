@@ -114,15 +114,9 @@ td {
   text-align: left;
   vertical-align: top;
 }
-tabs {
-  top: 30;
-  width: 100%;
-  position: fixed;
-}
 .header {
   top: 0px;
   margin: 0px 0px;
-  height: 5%;
   font-family: 'Quicksand';
   color: #fff;
   width: 100%;
@@ -141,14 +135,28 @@ tabs {
   padding: 2px 30px;
   font-size: 32px;
 }
-.tabs {
+.header .tabs {
+  position: relative;
   font-family: 'Quicksand';
   background-color: #008080;
   color: #fff;
   top: 5%;
   z-index: 9999;
 }
-.tabs p {
+.header .tabs a {
+  margin-left: 0.5em;
+  color: #fff;
+}
+.header .tabs a:hover,
+.header .tabs a:link,
+.header .tabs a:active {
+  text-decoration: none;
+  color: #fff;
+}
+.header .tabs li {
+  display: inline;
+}
+.header .tabs p {
   margin: 0px 10px;
 }
 .container {
@@ -158,6 +166,7 @@ tabs {
   margin: 50px 25px;
   overflow: hidden;
 }
+.container .tabholder,
 .container p {
   text-align: center;
   position: relative;
@@ -239,6 +248,21 @@ tabs {
   -webkit-background-size: 150px auto;
   -moz-background-size: 150px auto;
   background-size: 150px auto;
+}
+.container .section-holder #objectivec {
+  background-image: url("../images/objectivec.gif");
+}
+.container .section-holder #nodejs {
+  background-image: url("../images/nodejs.png");
+}
+.container .section-holder #ruby {
+  background-image: url("../images/ruby.jpeg");
+}
+.container .section-holder #js {
+  background-image: url("../images/js.gif");
+}
+.container .section-holder #as3 {
+  background-image: url("../images/as3.png");
 }
 .container .section-holder #java {
   background-image: url("../images/java.gif");

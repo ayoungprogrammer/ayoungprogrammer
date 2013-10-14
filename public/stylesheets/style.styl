@@ -30,15 +30,10 @@ th,td
   text-align left
   vertical-align top
 
-tabs
-  top 30
-  width 100%
-  position fixed
 
 .header
   top 0px
   margin 0px 0px
-  height 5%
   font-family 'Quicksand'
   color #fff
   width 100%
@@ -58,14 +53,23 @@ tabs
     padding 2px 30px
     font-size 32px
     
-.tabs
-  font-family 'Quicksand'
-  background-color #008080
-  color #fff
-  top 5%
-  z-index 9999
-  p 
-    margin 0px 10px
+  .tabs
+    position relative
+    font-family 'Quicksand'
+    background-color #008080
+    color #fff
+    top 5%
+    z-index 9999
+    a
+      margin-left 0.5em
+      color #fff
+    a:hover,a:link,a:active
+      text-decoration none
+      color #fff
+    li
+      display inline
+    p 
+      margin 0px 10px
   
 
 .container
@@ -74,6 +78,8 @@ tabs
   width calc(100%-50px)
   margin 50px 25px
   overflow hidden
+  .tabholder 
+    
   p
     text-align center
     position relative
@@ -142,6 +148,16 @@ tabs
       background-position 20px 20px
       background-repeat no-repeat
       background-size: 150px auto
+    #objectivec
+      background-image url(../images/objectivec.gif)
+    #nodejs
+      background-image url(../images/nodejs.png)
+    #ruby
+      background-image url(../images/ruby.jpeg)
+    #js
+      background-image url(../images/js.gif)
+    #as3
+      background-image url(../images/as3.png)
     #java
       background-image url(../images/java.gif)
     #crowdmark

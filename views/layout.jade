@@ -6,6 +6,7 @@ html(lang="en")
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
     script(type='text/javascript', src='https://code.jquery.com/ui/1.10.3/jquery-ui.js')
     script(type='text/javascript', src='js/bounceThis.js')
+    script(type='text/javascript', src='js/tab-ui.js')
     script.
        $(function() {
          $('.header').bounceThis({
@@ -15,12 +16,17 @@ html(lang="en")
           });
           $('.fade-in').fadeIn(1500,'swing');
        });
-       $(function(){
-          $( "#tabs").tabs();
+       $(document).ready(function(){
+         $('#tabs').tabs();
        });
+       //$(function(){
+       //   $('#tabs').tabs();
+       //});
   body
     .header
         h1 <a href="/" STYLE="TEXT-DECORATION: NONE; color : #fff" > a young programmer </a>
+        .tabs#tabs
+           block tabContent
     .fade-in
       .container
         h1<center><style="display:none"> Home of Michael Young</style></center>

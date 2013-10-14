@@ -15,6 +15,6 @@ exports.notFound = function(req, res){
 
 exports.errorPage = function(err, req, res, next){
 	
-	res.render('error501',{serv:req})
+	res.render('error500',{error:err});
 	
 };

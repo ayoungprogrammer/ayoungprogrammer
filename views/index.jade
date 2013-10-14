@@ -1,8 +1,20 @@
 extend layout
 
-block content
+block tabContent
 
-  h2#bio BIO
+  ul
+    li <a href='#bio'>Bio </a>
+    li <a href='#edu'>Education</a>
+    li <a href='#work'>Work</a>
+    li <a href='#tech'>Technical</a>
+    
+
+
+block content
+ 
+ 
+ .tabholder#bio
+  h2 BIO
   p.
      I am currently a student at the University of Waterloo in the Honours 
      Computer Science program. I have had a strong passion for programming 
@@ -22,7 +34,8 @@ block content
              tr
                th Technical Blog
                td <a href="http://blog.ayoungprogrammer.com">blog.ayoungprogrammer.com</a>
-  h2#edu EDUCATION
+ .tabholder#edu
+  h2 EDUCATION
   .section-holder
     .section-with-pic#rhhs
        h3 Richmond Hill High School
@@ -86,7 +99,8 @@ block content
             tr
                th Activities
                td Computer Science Club, Chess Club, Poker Studies Club, Rock Climbing Club, Entrepreneurship Society
-  h2#work WORK EXPERIENCE
+ .tabholder#work
+  h2 WORK EXPERIENCE
   .section-holder
     .section-with-pic#crowdmark
       h3 Crowdmark
@@ -105,11 +119,9 @@ block content
                to scan exams and extract regions of interest.
                <br>- Designed algorithm and page layout for markers
                <br>- Gained experience with test-driven development, version 
-               control (Git) and familiarized myself with Linux
-                  
-               
-  
-  h2#tech TECHNICAL SKILLS
+               control (Git) and familiarized myself with Linux         
+ .tabholder#tech
+  h2 TECHNICAL SKILLS
   .section-holder
     .section-with-pic#cplusplus
        h3 C++
@@ -121,7 +133,8 @@ block content
              td 5 years
            tr 
              th Description
-             td Advanced knowledge of STL. Used for 5 years for contest programming
+             td Advanced knowledge of STL, used for contest programming 
+                and experienced in software design
            tr
              th Projects
              td blog.ayoungprogrammer.com
@@ -137,3 +150,79 @@ block content
            tr 
              th Description
              td Advanced knowledge of data structures. Used for 3 years during high school.  
+  .section-holder
+    .section-with-pic#objectivec
+       h3 Objective-C
+       table
+         thead
+         tbody
+           tr
+             th Experience
+             td 1 years
+           tr 
+             th Description
+             td Created an iOS game with Cocos2D
+           tr
+             th Games
+             td <a href='https://itunes.apple.com/ca/app/athletes-arena/id562140574?mt=8'>Athlete's Arena</a>
+  .section-holder
+    .section-with-pic#as3
+       h3 AS3
+       table
+         thead
+         tbody
+           tr
+             th Experience
+             td 2 years
+           tr 
+             th Description
+             td Hobby game development. Familiarized with game programming patterns
+           tr
+             th Games
+             td <a href="http://www.newgrounds.com/portal/view/604791">NeuropolX</a> and <a href="http://www.newgrounds.com/portal/view/622929">Evolute</a>
+  .section-holder
+    .section-with-pic#js
+       h3 JavaScript
+       table
+         thead
+         tbody
+           tr
+             th Experience
+             td 1 years
+           tr 
+             th Description
+             td Experienced in web development (eg. this site)
+           tr
+             th Libraries
+             td Experienced with jQuery
+  .section-holder
+    .section-with-pic#nodejs
+       h3 Node.js
+       table
+         thead
+         tbody
+           tr
+             th Experience
+             td 1 years
+           tr 
+             th Description
+             td Experienced in web development (eg. this site)
+           tr
+             th Externals
+             td Experienced with Jade Template Engine and Stylus
+  .section-holder
+    .section-with-pic#ruby
+       h3 Ruby
+       table
+         thead
+         tbody
+           tr
+             th Experience
+             td 1 years
+           tr 
+             th Description
+             td Used for writing backend for Crowdmark
+           tr
+             th Projects
+             td Exam OMR for Crowdmark  
+             

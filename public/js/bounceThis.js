@@ -1,7 +1,6 @@
 ;(function($) {
         
     $.fn.bounceThis = function (options) {
-        
         // Create our default settings
         var settings = {
             bounceHeight: '20px',

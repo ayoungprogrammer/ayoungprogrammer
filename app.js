@@ -15,6 +15,10 @@ var express = require('express')
 
 
 var db = redis.createClient();
+db.on("error",function(err){
+	console.error("Error connecting to redis", err);
+});
+
 
 var app = express();
 
@@ -33,6 +37,7 @@ default: cur_port = 3000;
 }
 
 function addUser(req, res, next){
+	
   var ua = req.headers['user-agent'];
   db.zadd('online', Date.now(), ua, next);
   
@@ -78,22 +83,23 @@ app.use(getCurUsers);
 app.use(getTotalUsers);
 
 
-
 app.use(app.router);
 app.use(stylus.middleware(
 		  { src: __dirname + '/public'
 		  , compile: compile
 		  }
 		));
-		  
+
 		
 app.use(express.static(path.join(__dirname, 'public')));
-	
+  	
+
 
 app.get('/', routes.index);
 app.get('/users', user.list);
 
 app.use(routes.notFound);
+app.use(routes.errorPage);
 
 
 
