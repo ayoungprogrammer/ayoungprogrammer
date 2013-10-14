@@ -249,6 +249,9 @@ td {
   -moz-background-size: 150px auto;
   background-size: 150px auto;
 }
+.container .section-holder #redis {
+  background-image: url("../images/redis.png");
+}
 .container .section-holder #objectivec {
   background-image: url("../images/objectivec.gif");
 }
