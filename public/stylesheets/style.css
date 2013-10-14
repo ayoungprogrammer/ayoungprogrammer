@@ -120,11 +120,12 @@ tabs {
   position: fixed;
 }
 .header {
-  top: 0;
+  top: 0px;
+  margin: 0px 0px;
+  height: 5%;
   font-family: 'Quicksand';
-  padding: 5px 30px;
   color: #fff;
-  width: 100% -50px;
+  width: 100%;
   font-size: 25px;
   text-align: left;
   position: fixed;
@@ -134,10 +135,24 @@ tabs {
    * variable and the `darken` function
    */
   background-color: #00f;
-  border-bottom: 1px solid #0000b3;
   text-shadow: 0px -1px 0px #0000b3;
 }
+.header h1 {
+  padding: 2px 30px;
+  font-size: 32px;
+}
+.tabs {
+  font-family: 'Quicksand';
+  background-color: #008080;
+  color: #fff;
+  top: 5%;
+  z-index: 9999;
+}
+.tabs p {
+  margin: 0px 10px;
+}
 .container {
+  margin-left: 5%;
   padding: 0px 30px;
   width: calc(100% -50px);
   margin: 50px 25px;
@@ -178,6 +193,9 @@ tabs {
   display: block;
 }
 .container h2 {
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   background-color: #d0d0d0;
   font-family: 'Quicksand';
   position: relative;
@@ -199,6 +217,8 @@ tabs {
   display: block;
 }
 .container .section-holder .section {
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
   position: relative;
   padding: 10px 10px;
   line-height: 200%;
@@ -208,6 +228,8 @@ tabs {
   display: block;
 }
 .container .section-holder .section-with-pic {
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
   position: relative;
   padding: 10px 10px 10px 200px;
   line-height: 200%;
@@ -251,6 +273,8 @@ p {
   display: none;
 }
 .footer {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   width: 100%;
   margin: auto auto;
   border-top: 1px dotted #ccc;

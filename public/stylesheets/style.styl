@@ -36,11 +36,12 @@ tabs
   position fixed
 
 .header
-  top 0
+  top 0px
+  margin 0px 0px
+  height 5%
   font-family 'Quicksand'
-  padding 5px 30px
   color #fff
-  width 100%-50px
+  width 100%
   font-size 25px
   text-align left
   position fixed
@@ -51,10 +52,24 @@ tabs
    * variable and the `darken` function
    */
   background-color main-color
-  border-bottom 1px solid darken(main-color, 30%)
+  //border-bottom 1px solid darken(main-color, 30%)
   text-shadow 0px -1px 0px darken(main-color, 30%)
+  h1
+    padding 2px 30px
+    font-size 32px
+    
+.tabs
+  font-family 'Quicksand'
+  background-color #008080
+  color #fff
+  top 5%
+  z-index 9999
+  p 
+    margin 0px 10px
+  
 
 .container
+  margin-left 5%
   padding 0px 30px
   width calc(100%-50px)
   margin 50px 25px
@@ -90,6 +105,8 @@ tabs
     font-size 48px
     display block
   h2
+    padding 10px
+    border-radius 10px
     background-color #d0d0d0
     font-family 'Quicksand'
     position relative
@@ -108,6 +125,7 @@ tabs
     padding 10px 50px 10px
     display block
     .section
+      border-radius 15px
       position relative
       padding 10px 10px
       line-height: 200%
@@ -116,6 +134,7 @@ tabs
       background-repeat no-repeat
       display block
     .section-with-pic
+      border-radius 15px
       position relative
       padding 10px 10px 10px 200px
       line-height: 200%
@@ -151,12 +170,11 @@ p
     display none
 
 .footer
+  border-top-left-radius 10px
+  border-top-right-radius 10px
   width 100%
   margin auto auto
   border-top 1px dotted #ccc
-  //padding-top 5px
-  //padding-left 25px
-  //padding-right 25px
   font-size 13px
   bottom 0px
   color #fff
