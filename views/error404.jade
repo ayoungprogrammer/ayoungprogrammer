@@ -1,5 +1,5 @@
 !!!5
-html(lang="en")
+html
   head
     title a young programmer
     link(rel='stylesheet', href='/stylesheets/style.css')
@@ -12,17 +12,17 @@ html(lang="en")
             dropDownSpeed : 300,
             delay         : 400
           });
-          $('.fade-in').fadeIn(1500,'swing');
+          $('.fade-in').fadeIn(2000,'swing');
        });
+    
   body
-    .header
+    .fade-in
+      .header
         h1 <a href="/" STYLE="TEXT-DECORATION: NONE; color : #fff" > a young programmer </a>
     .fade-in
-      .container
-       h1<center><style="display:none"> Home of Michael Young</style></center>
-       block content
+        .container
+              error1 <center>Page not found!</center>
+              error2 <center>I could not find your page  :(</center>
     .fade-in
-      .footer
-        p.ltext Running on node with Express, Jade and Stylus
-        p.rtext #{serv.curUsers.length} users online, #{serv.totalUsers.length} total users
-        <div style="clear: both;"></div>
+        .footer
+            p Running on node with Express, Jade and Stylus

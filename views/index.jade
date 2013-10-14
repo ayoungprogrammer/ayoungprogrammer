@@ -1,17 +1,118 @@
 extend layout
 
 block content
-  h1<style="display:none"> Home of Michael Young</style>
-  p
+  h2 BIO
   p.
-     <a href="http://blog.ayoungprogrammer.com"> My technical blog </a>
-  p.
-     Contact info: michaelyoung1995@gmail.com
-     
-block sidebar
-  .widget
-    h1 Stats
-    p.
-      #{serv.curUsers.length} users online
-    p.
-      #{serv.totalUsers.length} total users
+     I am currently an Honours Computer Science student at University of Waterloo 
+     and I have had a strong passion for programming ever since I took
+     my first class when I was 11. Over the past years I have accumulated
+     programming experience in a broad range of areas from game development
+     to image processing apps to web development. I am a self driven individual
+     who one day aspires to start his own company. 
+  .section-holder
+    .section
+        h3 Contact Info
+        table
+           thead
+           tbody
+             tr
+               th Email
+               td michaelyoung1995@gmail.com
+             tr
+               th Technical Blog
+               td http://blog.ayoungprogrammer.com
+  h2 EDUCATION
+  .section-holder
+    .section-with-pic#rhhs
+       h3 Richmond Hill High School
+       table
+         thead
+         tbody
+            tr
+               th Graduated
+               td 2013
+            tr
+               th Activities
+               td President of Computer Science Club, DECA, Math Club, Chess Club
+            tr
+               th Contests
+               td 
+                 table
+                    thead
+                      tbody
+                        tr 
+                          th Cayley Math Contest (2010)
+                          td Top 7th Nationally
+                        tr
+                          th CCC Junior (2010)
+                          td Top 20th Nationally
+                        tr 
+                          th CCC Senior Stage 1 (2011)
+                          td Top 50th Nationally
+                        tr
+                          th CCC Senior Stage 2 (2012)
+                          td Bronze Finalist
+                        tr
+                          th CCC Senior Stage 2 (2013)
+                          td Bronze Finalist
+                        tr
+                          th ECOO (2010)
+                          td 5th Place Finalist
+                        tr
+                          th ECOO (2011)
+                          td 10th Place Finalist
+                        tr
+                          th ECOO (2012)
+                          td 6th Place Finalist
+                        tr
+                          th ECOO (2013)
+                          td 10th Place Finalist
+                        tr
+                          th USACO
+                          td Gold
+  .section-holder
+    .section-with-pic#uwater
+       h3 University of Waterloo
+       table
+         thead
+         tbody
+            tr
+               th Graduating
+               td 2018
+            tr 
+               th Degree
+               td Bachelor of Computer Science
+            tr
+               th Activities
+               td Computer Science Club, Chess Club, Poker Studies Club, Rock Climbing Club, Entrepreneurship Society
+  h2 TECHNICAL SKILLS
+  .section-holder
+    .section-with-pic#cplusplus
+       h3 C++
+       table
+         thead
+         tbody
+           tr
+             th Experience
+             td 5 years
+           tr 
+             th Description
+             td Advanced knowledge of STL. Used for 5 years for contest programming
+           tr
+             th Projects
+             td blog.ayoungprogrammer.com
+  .section-holder
+    .section-with-pic#Java
+       h3 C++
+       table
+         thead
+         tbody
+           tr
+             th Experience
+             td 5 years
+           tr 
+             th Description
+             td Advanced knowledge of STL. Used for 5 years for contest programming
+           tr
+             th Projects
+             td blog.ayoungprogrammer.com   

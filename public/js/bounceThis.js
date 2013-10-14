@@ -32,8 +32,7 @@
             // We do this to mimic it's physical space when animating
             // Position it relative, to setup more relative positioning on the child element
             $('.bounceThis').css({
-                height: itemheight,
-                position: 'relative'
+                height: itemheight
             });
             
             // Hide the element
@@ -47,7 +46,8 @@
                 // Show the element to make it visible again, but offscreen still
                 function () {
                     $(this).css({
-                        position: 'relative'
+                        position: 'fixed',
+                        width: '100%'
                     }).show();
                 }
             );
