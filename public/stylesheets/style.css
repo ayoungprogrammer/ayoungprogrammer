@@ -218,11 +218,17 @@ tabs {
   -moz-background-size: 150px auto;
   background-size: 150px auto;
 }
+.container .section-holder #java {
+  background-image: url("../images/java.gif");
+}
+.container .section-holder #crowdmark {
+  background-image: url("../images/crowdmark.gif");
+}
 .container .section-holder #rhhs {
   background-image: url("../images/rhhs.jpg");
 }
 .container .section-holder #uwater {
-  background-image: url("../images/uwater.jpg");
+  background-image: url("../images/uwater.gif");
 }
 .container .section-holder #cplusplus {
   background-image: url("../images/cplusplus.png");
