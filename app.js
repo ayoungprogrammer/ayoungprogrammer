@@ -92,8 +92,6 @@ app.use(stylus.middleware(
 
 		
 app.use(express.static(path.join(__dirname, 'public')));
-  	
-
 
 app.get('/', routes.index);
 app.get('/users', user.list);
