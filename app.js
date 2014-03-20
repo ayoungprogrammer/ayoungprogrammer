@@ -27,7 +27,7 @@ var cur_port;
 console.log('Current env: '+app.get('env'));
 switch (app.get('env')){
 case 'production': 
-	cur_port = 80; 
+	cur_port = 3000; 
 	break;
 case 'development': 
 	app.use(express.errorHandler()); 
