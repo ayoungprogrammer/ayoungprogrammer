@@ -114,6 +114,11 @@ td {
   text-align: left;
   vertical-align: top;
 }
+a:hover,
+a:link,
+a:active {
+  text-decoration: none;
+}
 .header {
   top: 0px;
   margin: 0px 0px;
@@ -128,8 +133,8 @@ td {
    * Note the use of the `main-color`
    * variable and the `darken` function
    */
-  background-color: #00f;
-  text-shadow: 0px -1px 0px #0000b3;
+  background-color: #33c;
+  text-shadow: 0px -1px 0px #24248f;
 }
 .header h1 {
   padding: 2px 30px;
@@ -138,7 +143,7 @@ td {
 .header .tabs {
   position: relative;
   font-family: 'Quicksand';
-  background-color: #5190ed;
+  background-color: #36f;
   color: #fff;
   top: 5%;
   z-index: 9999;
@@ -205,7 +210,8 @@ td {
   padding: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background-color: #d0d0d0;
+  background-color: #5190fd;
+  color: #fff;
   font-family: 'Quicksand';
   position: relative;
   width: 100%;
@@ -285,6 +291,27 @@ td {
 .container .section-holder #safewords {
   background-image: url("../images/safewords.png");
 }
+.container .section-holder #php {
+  background-image: url("../images/php.png");
+}
+.container .section-holder #angularjs {
+  background-image: url("../images/angularjs.png");
+}
+.container .section-holder #mysql {
+  background-image: url("../images/mysql.jpeg");
+}
+.container .section-holder #thecshandbook {
+  background-image: url("../images/thecshandbook.png");
+}
+.container .section-holder #contextlogic {
+  background-image: url("../images/contextlogic.gif");
+}
+.container .section-holder #backbonejs {
+  background-image: url("../images/backbonejs.png");
+}
+.container .section-holder #python {
+  background-image: url("../images/python.png");
+}
 .page-content {
   width: 100%;
   height: 100%;
@@ -311,7 +338,7 @@ p {
   font-size: 13px;
   bottom: 0px;
   color: #fff;
-  background-color: #1010ff;
+  background-color: #33c;
   position: fixed;
 }
 .footer .ltext {
