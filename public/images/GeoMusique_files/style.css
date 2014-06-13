@@ -1,0 +1,19 @@
+ html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#map-canvas{
+  height: 90%;
+}
+
+
+#rdio-bar{
+  top:0;
+  width:100%;
+  height:10%;
+  background-color:#ff0000;
+  border-size:2px;
+  border-color:#0;
+}
