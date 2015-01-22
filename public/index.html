@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>a young programmer</title>
+<link rel="stylesheet" href="./stylesheets/style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="./js/bounceThis.js"></script>
+<script type="text/javascript" src="./js/tab-ui.js"></script>
+<script>$(function() {
+  $('.header').bounceThis({
+     bounceHeight  : '20px',
+     dropDownSpeed : 300,
+     delay         : 400
+	  });
+	   $('.fade-in').fadeIn(1500,'swing');
+	});
+	$(document).ready(function(){
+	  $('#tabs').tabs();
+	});
+</script>
+</head>
+<body>
+<div class="header">
+	<h1><a href="/" STYLE="TEXT-DECORATION: NONE; color : #fff" > a young programmer </a></h1>
+
+	<div id="tabs" class="tabs">
+		<ul>
+			<li><a href='#bio'>Bio </a></li>
+			<li><a href='#edu'>Education</a></li>
+			<li><a href='#work'>Work</a></li>
+			<li><a href='#projects'>Project</a></li>
+			<li><a href='#tech'>Technical</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="fade-in">
+
+<div class="container">
+	<h1><center><style="display:none"> Home of Michael Young</style></center></h1>
+	<div id="bio" class="tabholder">
+	<h2>BIO</h2>
+	<p>I am currently a student at the University of Waterloo in the Honours 
+		Computer Science program. I have had a strong passion for programming 
+		since I attended my first class at 11. Over the past years I have accumulated
+		programming experience in a broad range of areas from game development
+		to image processing apps to web development. I am self-driven, determined and 
+		aspire to one day start my own company. 
+	</p>
+
+	<div class="section-holder">
+		<div class="section">
+			<h3>Contact Info</h3>
+			<table><thead></thead>
+				<tbody>
+					<tr>
+						<th>Email:</th>
+						<td>michaelyoung1995@gmail.com</td>
+					</tr>
+					<tr>
+						<th>Technical Blog:</th>
+						<td><a href="http://blog.ayoungprogrammer.com">blog.ayoungprogrammer.com</a></td>
+					</tr>
+					<tr>
+						<th>GitHub:</th>
+						<td><a href="http://github.com/ayoungprogrammer">ayoungprogrammer</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div id="edu" class="tabholder">
+	<h2>EDUCATION</h2>
+	<div class="section-holder">
+		<div id="rhhs" class="section-with-pic">
+			<h3>Richmond Hill High School</h3>
+			<table><thead></thead>
+			<tbody>
+				<tr>
+					<th>Graduated</th>
+					<td>2013</td>
+				</tr>
+				<tr>
+					<th>Activities</th>
+					<td>President of Computer Science Club, DECA, Math Club, Chess Club</td>
+				</tr>
+				<tr>
+					<th>Contests</th>
+					<td><table><thead><tbody>
+						<tr> 
+							<th>Cayley Math Contest (2010)</th>
+							<td>Top 7th Nationally</td>
+						</tr>
+						<tr>
+							<th>ECOO (2011)</th>
+							<td>10th Plae Finalist</td>
+						</tr>
+						<tr>
+							<th>CCC Senior Stage 2 (2012)</th>
+							<td>Bronze Finalist</td>
+						</tr>
+						<tr>
+							<th>CCC Senior Stage 2 (2013)</th>
+							<td>Bronze Finalist</td>
+						</tr>
+						<tr>
+							<th>USACO (2013)</th>
+							<td>Gold</td>
+						</tr>
+					</tbody></thead></table></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="uwater" class="section-with-pic">
+			<h3>University of Waterloo</h3>
+			<table><thead></thead><tbody>
+			<tr>
+				<th>Expected Graduation Date</th>
+				<td>2018</td>
+			</tr>
+			<tr> 
+				<th>Degree</th>
+				<td>Bachelor of Computer Science</td>
+			</tr>
+			<tr>
+				<th>Activities</th>
+				<td>Computer Science Club, Chess Club, Poker Studies Club, Rock Climbing Club, Entrepreneurship Society</td>
+			</tr>
+			</tbody></table>
+		</div>
+	</div>
+</div>
+
+<div id="work" class="tabholder">
+	<h2>WORK EXPERIENCE</h2>
+	<div class="section-holder">
+		<div id="crowdmark" class="section-with-pic">
+			<h3>Crowdmark</h3>
+			<table><thead></thead><tbody>
+			<tr> 
+				<th>Position</th>
+				<td>Developer</td>
+			</tr>
+			<tr>
+				<th>Period</th>
+				<td>March 2013 - August 2013</td>
+			</tr>
+			<tr>
+				<th>Location</th>
+				<td>Toronto, Canada</td>
+			</tr>
+			<tr>
+				<th>Description</th>
+				<td>
+					Designed an OMR (optical mark reader) algorithm to scan exams and extract ROI<br>
+					Created an extensive automated testing suite
+				</td>
+			</tr>
+			</tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="contextlogic" class="section-with-pic">
+			<h3>ContextLogic</h3>
+			<table><thead></thead><tbody>
+				<tr>
+					<td>Position</td>
+					<td>Full Stack Engineer Intern</td>
+				</tr>
+				<tr>
+					<th>Period</th>
+					<td>May 2014 - August 2014</td>
+				</tr>
+				<tr>
+					<th>Location</th>
+					<td>San Francisco, United States</td>
+				</tr>
+				<tr>
+					<th>Description</th>
+					<td>
+						Developed a system for ordering products from merchants ($2,400,000 annual GMV)<br>
+						Developed a system for disputing chargebacks
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="square" class="section-with-pic">
+			<h3>Square</h3>
+			<table><thead></thead><tbody>
+				<tr>
+					<td>Position</td>
+					<td>Data Engineer Intern</td>
+				</tr>
+				<tr>
+					<th>Period</th>
+					<td>January 2015 - April 2015</td>
+				</tr>
+				<tr>
+					<th>Location</th>
+					<td>San Francisco, United States</td>
+				</tr>
+				<tr>
+					<th>Description</th>
+					<td>
+						Transferred 100TB of data from Hadoop to Amazon Glacier<br>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+</div>
+
+<div id="projects" class="tabholder">
+	<h2>PROJECTS</h2>
+	<div class="section-holder">
+		<div id="safewords" class="section-with-pic">
+			<h3>Safe Words</h3>
+			<table><thead></thead><tbody>
+			<tr>
+				<th>Description</th>
+				<td>A Chrome extension that blocks out swear words  </td>
+			</tr>
+			<tr>
+				<th>Link</th>
+				<td><a href="https://chrome.google.com/webstore/detail/safe-words/mncnlkabidgflobdapkgmnlikkiilijj">Safe Words</a>  </td>
+			</tr>
+			</tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div class="section-with-pic">
+			<h3>Business Budget</h3>
+			<table><thead></thead><tbody>
+				<tr>
+					<th>Description</th>
+					<td>Simple budgeting tool</td>
+				</tr>
+				<tr>
+					<th>Link</th>
+					<td><a href="http://bbudget.herokuapp.com">Business Budget</a></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div class="section-with-pic">
+			<h3>Expert Opinion</h3>
+			<table><thead></thead><tbody>
+				<tr>
+					<th>Description</th>
+					<td>See what experts have to say from public votes</td>
+				</tr>
+				<tr>
+				<th>Link</th>
+					<td><a href="http://expertopinion.herokuapp.com">Expert Opinion</a></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+
+	<div class="section-holder">
+		<div id="thecshandbook" class="section-with-pic">
+			<h3>The CS Handbook</h3>
+			<table><thead></thead><tbody>
+				<tr>
+					<th>Description</th>
+					<td>A handbook of common algorithms and data structures</td>
+				</tr>
+				<tr>
+					<th>Link</th>
+					<td><a href="http://www.thecshandbook.com">The CS Handbook</a> </td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+</div>
+
+<div id="tech" class="tabholder">
+	<h2>TECHNICAL SKILLS</h2>
+	<div class="section-holder">
+		<div id="cplusplus" class="section-with-pic">
+			<h3>C++</h3>
+			<table><thead></thead><tbody>
+				<tr>
+					<th>Experience</th>
+					<td>5 years</td>
+				</tr>
+				<tr> 
+					<th>Description</th>
+					<td>Advanced knowledge of STL, used for contest programming <and>experienced in software design</and></td>
+				</tr>
+				<tr>
+					<th>Projects</th>
+					<td>blog.ayoungprogrammer.com</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="java" class="section-with-pic">
+			<h3>Java</h3>
+			<table><thead></thead><tbody>
+				<tr>
+					<th>Experience</th>
+					<td>3 years</td>
+				</tr>
+				<tr> 
+					<th>Description</th>
+					<td>Advanced knowledge of data structures. Used for 3 years during high school. </td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="objectivec" class="section-with-pic">
+			<h3>Objective-C</h3>
+			<table><thead></thead><tbody>
+				<tr>
+					<th>Experience</th>
+					<td>1 years</td>
+				</tr>
+				<tr> 
+					<th>Description</th>
+					<td>Created an iOS game with Cocos2D</td>
+				</tr>
+				<tr>
+					<th>Games</th>
+					<td><a href='https://itunes.apple.com/ca/app/athletes-arena/id562140574?mt=8'>Athlete's Arena</a></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="as3" class="section-with-pic"><h3>AS3</h3><table><thead></thead><tbody><tr><th>Experience</th><td>2 years</td></tr><tr> <th>Description</th><td>Hobby game development. Familiarized with game programming patterns</td></tr><tr><th>Games</th><td><a href="http://www.newgrounds.com/portal/view/604791">NeuropolX</a> and <a href="http://www.newgrounds.com/portal/view/622929">Evolute</a></td></tr></tbody></table>
+		</div></div>
+	<div class="section-holder">
+		<div id="js" class="section-with-pic"><h3>JavaScript</h3><table><thead></thead><tbody><tr><th>Experience</th><td>1 years</td></tr><tr> <th>Description</th><td>Experienced in web development (eg. this site)</td></tr><tr><th>Libraries</th><td>Experienced with jQuery</td></tr></tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="nodejs" class="section-with-pic"><h3>Node.js</h3><table><thead></thead><tbody><tr><th>Experience</th><td>1 years</td></tr><tr> <th>Description</th><td>Experienced in web development (eg. this site)</td></tr><tr><th>Externals</th><td>Experienced with Jade Template Engine and Stylus</td></tr></tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="ruby" class="section-with-pic"><h3>Ruby</h3><table><thead></thead><tbody><tr><th>Experience</th><td>1 years</td></tr><tr> <th>Description</th><td>Used for writing backend for Crowdmark</td></tr><tr><th>Projects</th><td>Exam OMR for Crowdmark  </td></tr></tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="redis" class="section-with-pic"><h3>Redis</h3><table><thead></thead><tbody><tr><th>Experience</th><td>1 years</td></tr><tr> <th>Description</th><td>Used for backend on this site</td></tr><tr><th>Projects</th><td>ayoungprogrammer.com</td></tr></tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="php" class="section-with-pic"><h3>PHP</h3><table><thead></thead><tbody><tr><th>Experience</th><td>1 years</td></tr><tr> <th>Description</th><td>Used for backend on thecshandbook.com</td></tr><tr><th>Projects</th><td>thecshandbook.com</td></tr></tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="mysql" class="section-with-pic"><h3>MySQL</h3><table><thead></thead><tbody><tr><th>Experience</th><td>1 years</td></tr><tr> <th>Description</th><td>Used for backend on thecshandbook.com</td></tr><tr><th>Projects</th><td><a href="http://www.thecshandbook.com">The CS Handbook</a></td></tr></tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="angularjs" class="section-with-pic"><h3>AngularJS</h3><table><thead></thead><tbody><tr><th>Experience</th><td>1 years</td></tr><tr> <th>Description</th><td>Used for frontend on Business Budget and Expert Opinion</td></tr><tr><th>Projects</th><td><a href="http://bbudget.herokuapp.com">Business Budget</a> <a href="http://expertopinion.herokuapp.com">Expert Opinion</a></td></tr></tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="python" class="section-with-pic"><h3>Python</h3><table><thead></thead><tbody><tr><th>Experience</th><td>6 months</td></tr><tr> <th>Description</th><td>Used for back-end services of <a href="wish.com">Wish.com</a></td></tr></tbody></table>
+		</div>
+	</div>
+	<div class="section-holder">
+		<div id="backbonejs" class="section-with-pic">
+			<h3>Backbone.js</h3>
+			<table><thead></thead><tbody>
+				<tr><th>Experience</th><td>6 months</td></tr>
+				<tr> <th>Description</th><td>Used for front-end services of <a href="wish.com">Wish.com</a></td></tr>
+			</tbody></table>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+<!-- 
+<div class="fade-in">
+	<div class="footer">
+		<p class="ltext">Running on node with Express, Jade and Stylus</p>
+		<div style="clear: both;"></div>
+	</div>
+</div>-->
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50105859-3', 'auto');
+  ga('send', 'pageview');
+
+</script></html>
+
+
