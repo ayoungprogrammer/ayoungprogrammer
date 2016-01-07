@@ -315,6 +315,9 @@ a:active {
 .container .section-holder #square {
   background-image: url("../images/square.png");
 }
+.container .section-holder #linkedin {
+  background-image: url("../images/linkedin.png");
+}
 .page-content {
   width: 100%;
   height: 100%;
