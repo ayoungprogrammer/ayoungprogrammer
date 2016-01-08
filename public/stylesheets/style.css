@@ -254,6 +254,7 @@ a:active {
   -webkit-background-size: 150px auto;
   -moz-background-size: 150px auto;
   background-size: 150px auto;
+  padding-bottom: 30px;
 }
 .container .section-holder #redis {
   background-image: url("../images/redis.png");
@@ -298,7 +299,7 @@ a:active {
   background-image: url("../images/angularjs.png");
 }
 .container .section-holder #mysql {
-  background-image: url("../images/mysql.jpeg");
+  background-image: url("../images/mysql.png");
 }
 .container .section-holder #thecshandbook {
   background-image: url("../images/thecshandbook.png");
