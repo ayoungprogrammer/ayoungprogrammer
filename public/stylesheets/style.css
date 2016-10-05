@@ -249,12 +249,13 @@ a:active {
   padding: 10px 10px 10px 200px;
   line-height: 200%;
   border: 1px solid #000;
-  background-position: 20px 20px;
+  background-position: 20px 80px;
   background-repeat: no-repeat;
   -webkit-background-size: 150px auto;
   -moz-background-size: 150px auto;
   background-size: 150px auto;
   padding-bottom: 30px;
+  min-height: 215px;
 }
 .container .section-holder #redis {
   background-image: url("../images/redis.png");
@@ -304,8 +305,11 @@ a:active {
 .container .section-holder #thecshandbook {
   background-image: url("../images/thecshandbook.png");
 }
-.container .section-holder #contextlogic {
-  background-image: url("../images/contextlogic.gif");
+.container .section-holder #wish {
+  background-image: url("../images/wish.png");
+}
+.container .section-holder #wish2 {
+  background-image: url("../images/wish.png");
 }
 .container .section-holder #backbonejs {
   background-image: url("../images/backbonejs.png");
